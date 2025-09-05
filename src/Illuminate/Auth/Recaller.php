@@ -85,7 +85,7 @@ class Recaller
 
     /**
      * Get the recaller's segments.
-     * 
+     *
      * @return array
      */
     public function segments()

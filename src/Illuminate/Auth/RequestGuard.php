@@ -56,7 +56,7 @@ class RequestGuard implements Guard
 
     /**
      * Validate a user's credentials.
-     * 
+     *
      * @return bool
      */
     public function validate(#[\SensitiveParameter] array $credentials = [])

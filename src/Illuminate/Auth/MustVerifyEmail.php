@@ -8,7 +8,7 @@ trait MustVerifyEmail
 {
     /**
      * Determine if the user has verified their email address.
-     * 
+     *
      * @return bool
      */
     public function hasVerifiedEmail()

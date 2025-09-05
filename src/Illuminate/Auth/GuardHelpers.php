@@ -38,7 +38,7 @@ trait GuardHelpers
 
     /**
      * Determine if the guard has a user instance.
-     * 
+     *
      * @return bool
      */
     public function hasUser()
@@ -48,7 +48,7 @@ trait GuardHelpers
 
     /**
      * Determine if the current user is authenticated.
-     * 
+     *
      * @return bool
      */
     public function check()
@@ -58,7 +58,7 @@ trait GuardHelpers
 
     /**
      * Determine if the current user is a guest.
-     * 
+     *
      * @return bool
      */
     public function guest()

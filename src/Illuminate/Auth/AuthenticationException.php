@@ -45,7 +45,7 @@ class AuthenticationException extends Exception
 
     /**
      * Get the guards that were checked.
-     *    
+     *
      * @return array
      */
     public function guards()
