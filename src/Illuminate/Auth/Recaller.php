@@ -85,8 +85,10 @@ class Recaller
 
     /**
      * Get the recaller's segments.
+     * 
+     * @return array
      */
-    public function segments(): array
+    public function segments()
     {
         return explode('|', $this->recaller);
     }

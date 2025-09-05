@@ -23,8 +23,10 @@ class GenericUser implements UserContract
 
     /**
      * Get the name of the unique identifier for the user.
+     * 
+     * @return string
      */
-    public function getAuthIdentifierName(): string
+    public function getAuthIdentifierName()
     {
         return 'id';
     }
@@ -41,8 +43,10 @@ class GenericUser implements UserContract
 
     /**
      * Get the name of the password attribute for the user.
+     * 
+     * @return string
      */
-    public function getAuthPasswordName(): string
+    public function getAuthPasswordName()
     {
         return 'password';
     }
@@ -80,8 +84,10 @@ class GenericUser implements UserContract
 
     /**
      * Get the column name for the "remember me" token.
+     * 
+     * @return string
      */
-    public function getRememberTokenName(): string
+    public function getRememberTokenName()
     {
         return 'remember_token';
     }

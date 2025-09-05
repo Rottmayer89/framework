@@ -38,24 +38,30 @@ trait GuardHelpers
 
     /**
      * Determine if the guard has a user instance.
+     * 
+     * @return bool
      */
-    public function hasUser(): bool
+    public function hasUser()
     {
         return ! is_null($this->user);
     }
 
     /**
      * Determine if the current user is authenticated.
+     * 
+     * @return bool
      */
-    public function check(): bool
+    public function check()
     {
         return ! is_null($this->user());
     }
 
     /**
      * Determine if the current user is a guest.
+     * 
+     * @return bool
      */
-    public function guest(): bool
+    public function guest()
     {
         return ! $this->check();
     }
