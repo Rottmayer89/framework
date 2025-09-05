@@ -38,30 +38,24 @@ trait GuardHelpers
 
     /**
      * Determine if the guard has a user instance.
-     *
-     * @return bool
      */
-    public function hasUser()
+    public function hasUser(): bool
     {
         return ! is_null($this->user);
     }
 
     /**
      * Determine if the current user is authenticated.
-     *
-     * @return bool
      */
-    public function check()
+    public function check(): bool
     {
         return ! is_null($this->user());
     }
 
     /**
      * Determine if the current user is a guest.
-     *
-     * @return bool
      */
-    public function guest()
+    public function guest(): bool
     {
         return ! $this->check();
     }
@@ -116,7 +110,6 @@ trait GuardHelpers
     /**
      * Set the user provider used by the guard.
      *
-     * @param  \Illuminate\Contracts\Auth\UserProvider  $provider
      * @return void
      */
     public function setProvider(UserProvider $provider)

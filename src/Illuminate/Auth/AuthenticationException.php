@@ -45,10 +45,8 @@ class AuthenticationException extends Exception
 
     /**
      * Get the guards that were checked.
-     *
-     * @return array
      */
-    public function guards()
+    public function guards(): array
     {
         return $this->guards;
     }
@@ -56,7 +54,6 @@ class AuthenticationException extends Exception
     /**
      * Get the path the user should be redirected to.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return string|null
      */
     public function redirectTo(Request $request)
@@ -73,7 +70,6 @@ class AuthenticationException extends Exception
     /**
      * Specify the callback that should be used to generate the redirect path.
      *
-     * @param  callable  $redirectToCallback
      * @return void
      */
     public static function redirectUsing(callable $redirectToCallback)

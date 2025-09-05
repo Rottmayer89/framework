@@ -15,8 +15,6 @@ class GenericUser implements UserContract
 
     /**
      * Create a new generic User object.
-     *
-     * @param  array  $attributes
      */
     public function __construct(array $attributes)
     {
@@ -25,10 +23,8 @@ class GenericUser implements UserContract
 
     /**
      * Get the name of the unique identifier for the user.
-     *
-     * @return string
      */
-    public function getAuthIdentifierName()
+    public function getAuthIdentifierName(): string
     {
         return 'id';
     }
@@ -45,10 +41,8 @@ class GenericUser implements UserContract
 
     /**
      * Get the name of the password attribute for the user.
-     *
-     * @return string
      */
-    public function getAuthPasswordName()
+    public function getAuthPasswordName(): string
     {
         return 'password';
     }
@@ -86,10 +80,8 @@ class GenericUser implements UserContract
 
     /**
      * Get the column name for the "remember me" token.
-     *
-     * @return string
      */
-    public function getRememberTokenName()
+    public function getRememberTokenName(): string
     {
         return 'remember_token';
     }
